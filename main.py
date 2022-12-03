@@ -14,6 +14,7 @@ class YellowCircles(QMainWindow):
     def paint(self):
         self.do_paint = True
         self.repaint()
+        self.do_paint = False
 
     def paintEvent(self, event):
         if self.do_paint:
